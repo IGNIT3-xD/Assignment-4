@@ -3,13 +3,13 @@ function bestTeam(player1, player2) {
         return 'Invalid'
     }
 
-    const TotalFoul1 = player1.foul + player1.cardY + player1.cardR
-    const TotalFoul2 = player2.foul + player2.cardY + player2.cardR
+    const totalFoul1 = player1.foul + player1.cardY + player1.cardR
+    const totalFoul2 = player2.foul + player2.cardY + player2.cardR
 
-    if (TotalFoul1 < TotalFoul2) {
+    if (totalFoul1 < totalFoul2) {
         return player1.name
     }
-    else if (TotalFoul1 === TotalFoul2) {
+    else if (totalFoul1 === totalFoul2) {
         return 'Tie'
     }
     else {
