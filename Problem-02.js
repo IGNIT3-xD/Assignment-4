@@ -3,7 +3,8 @@ function onlyCharacter(str) {
         return 'Invalid'
     }
 
-    let removeSpaces = str.trim().split(/\s+/).join('').toLocaleUpperCase()
+    // let removeSpaces = str.trim().split(/\s+/).join('').toUpperCase()
+    let removeSpaces = str.replaceAll(' ', '').toUpperCase()
     return removeSpaces
 }
 
